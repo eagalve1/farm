@@ -1,0 +1,191 @@
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+/* latin-ext */
+    @font-face {
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/habibi/v21/CSR-4zFWkuqcTTNyQxhfVOY.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+    @font-face {
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/habibi/v21/CSR-4zFWkuqcTTNyTRhf.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin */
+    @font-face {
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgv__RP.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/*-------------------- CSS RESET ---------------------------------------------------*/
+/* Add to text content */
+p {
+    font-family: "Habibi";
+    padding: 10px;
+}
+
+/* Add to headings */
+/* Styles */
+h1 {
+    font-family: "Irish Grover";
+    line-height: 2.5em;
+
+}
+
+h2 {
+    font-family: "Irish Grover";
+    line-height: 1.75em;
+
+}
+
+h3 {
+    font-family: "Irish Grover";
+    text-align: center;
+
+}
+
+h3, p {
+    line-height: 1.25em;
+
+}
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+html {
+    background-color: #ffffff;
+
+}
+
+#textShadow {
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+header, footer {
+    width: auto;
+    background-color: #06A816;
+    color: #ffffff;
+    padding: 20px;
+    font-family: "Habibi";
+}
+
+header {
+    font-family: "Irish Grover";
+    color: #ffffff;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+dt {
+    font-family: "Irish Grover";
+    font-size: 1.75em;
+}
+
+small {
+    color: #06A816;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    background-color: #E75D02;
+    color: #ffffff;
+    border: solid #ffffff;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+#topButton {
+    position: fixed; 
+    bottom: 10px;
+    right: 10px;
+    width: 2%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    background: rgba(0,0,0, 0.7);
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100px;
+    text-align: center;
+    margin-top: -10.0em;
+    position: absolute;
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+@media screen and (min-width: 428px) {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width: 834px) {
+    ul {
+        grid-template-columns: 1fr 1fr;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width: 1280px) {
+    footer {
+        text-align: center;
+        display: grid;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media screen and (min-width: 1440px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+}
